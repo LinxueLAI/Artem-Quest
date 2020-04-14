@@ -20,10 +20,23 @@ public class GameManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    void OnLevelWasLoaded(int level)
+    /*void OnLevelWasLoaded(int level)
     {
         //Debug.Log("level:"+level);
         if (SceneManager.GetActiveScene().name == "GamePlay")
+        {
+            GameController.Instance.SetScore(score1);
+            GameController.Instance.SetLifeCount(lifeCount1);
+            GameController.Instance.SetCoinCount(coinCount1);
+            PlayerScore.LifeCount = lifeCount1;
+            PlayerScore.CoinCount = coinCount1;
+            PlayerScore.score = score1;
+        }
+    }*/
+
+    private void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Gameplay")
         {
             GameController.Instance.SetScore(score1);
             GameController.Instance.SetLifeCount(lifeCount1);
