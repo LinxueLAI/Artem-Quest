@@ -267,7 +267,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 100916192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1213320567}
+        m_MethodName: SetHard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &100916192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -315,7 +326,7 @@ GameObject:
   - component: {fileID: 128078423}
   - component: {fileID: 128078422}
   m_Layer: 5
-  m_Name: Image (1)
+  m_Name: easy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -530,7 +541,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 885222603}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1213320567}
+        m_MethodName: SetEasy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &885222603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,7 +974,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1166218647}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1213320567}
+        m_MethodName: SetMedium
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1166218647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,6 +1116,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2f38f8278ffacf4f976194aa3db7cd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  easySign: {fileID: 128078420}
+  mediumSign: {fileID: 1395914947}
+  hardSign: {fileID: 1417074615}
 --- !u!1 &1227596056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1203,7 @@ GameObject:
   - component: {fileID: 1395914950}
   - component: {fileID: 1395914949}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: medium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1239,7 +1275,7 @@ GameObject:
   - component: {fileID: 1417074618}
   - component: {fileID: 1417074617}
   m_Layer: 5
-  m_Name: Image (3)
+  m_Name: hard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

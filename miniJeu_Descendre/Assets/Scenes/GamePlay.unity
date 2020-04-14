@@ -894,7 +894,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d840d88b18a731a4bbc1a98969a7978c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  easySpeed: 1
+  MeidumSpeed: 2
+  HardSpeed: 3
+  speed: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -5249,22 +5252,49 @@ PrefabInstance:
     - target: {fileID: 438968090602490303, guid: 546cb387843610e4b8f035376d208ceb,
         type: 3}
       propertyPath: m_LinearDrag
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 438968090602490303, guid: 546cb387843610e4b8f035376d208ceb,
         type: 3}
       propertyPath: m_Mass
-      value: 0.4
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 438968090602490303, guid: 546cb387843610e4b8f035376d208ceb,
         type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6898660403413956220, guid: 546cb387843610e4b8f035376d208ceb,
         type: 3}
       propertyPath: MaxSpeed
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 6898660403413956220, guid: 546cb387843610e4b8f035376d208ceb,
+        type: 3}
+      propertyPath: Force
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898660403413956220, guid: 546cb387843610e4b8f035376d208ceb,
+        type: 3}
+      propertyPath: myAnimator
+      value: 
+      objectReference: {fileID: 438968090944851798}
+    - target: {fileID: 6898660403413956220, guid: 546cb387843610e4b8f035376d208ceb,
+        type: 3}
+      propertyPath: mybody
+      value: 
+      objectReference: {fileID: 438968090944851797}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 546cb387843610e4b8f035376d208ceb, type: 3}
+--- !u!50 &438968090944851797 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 438968090602490303, guid: 546cb387843610e4b8f035376d208ceb,
+    type: 3}
+  m_PrefabInstance: {fileID: 438968090944851796}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &438968090944851798 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 438968090602490300, guid: 546cb387843610e4b8f035376d208ceb,
+    type: 3}
+  m_PrefabInstance: {fileID: 438968090944851796}
+  m_PrefabAsset: {fileID: 0}

@@ -20,7 +20,8 @@ public class GameManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    /*void OnLevelWasLoaded(int level)
+    /*
+    void OnLevelWasLoaded(int level)
     {
         //Debug.Log("level:"+level);
         if (SceneManager.GetActiveScene().name == "GamePlay")
@@ -32,8 +33,8 @@ public class GameManager : MonoBehaviour
             PlayerScore.CoinCount = coinCount1;
             PlayerScore.score = score1;
         }
-    }*/
-
+    }
+    */
     private void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Gameplay")

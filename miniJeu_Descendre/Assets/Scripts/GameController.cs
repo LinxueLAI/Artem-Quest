@@ -51,12 +51,16 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
 
     }
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         Instance = this;
         PausePanel.SetActive(false);
         Time.timeScale = 0;//pause in the beginning
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+
     }
 
     public void ShowGameOver(int score,int coin){

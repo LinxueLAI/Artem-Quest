@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 15946520}
   - component: {fileID: 15946519}
   m_Layer: 5
-  m_Name: Text (1)
+  m_Name: coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 1048223592}
   - component: {fileID: 1048223591}
   m_Layer: 5
-  m_Name: Text
+  m_Name: score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -725,3 +725,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84f59797da8b18947ae78f416fd1bf45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: {fileID: 1048223591}
+  coin: {fileID: 15946519}
